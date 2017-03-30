@@ -25,7 +25,6 @@ export class LoginComponent implements OnDestroy {
   public get isLoggedIn() : boolean {
     return this.userProfileService.isLoggedIn;
   }
-
   login() {
     this.loginSub = this.loginService
       .login(this.username, this.password)
