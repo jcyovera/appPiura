@@ -1,0 +1,13 @@
+<div>
+  <h2>Lista de Damnificados</h2>
+  <!--<p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date3|date}}</span>-->
+  <div class="col-lg-12">
+    <div class="form-inline">
+      <input id="inputSearchBar" class="form-control mr-sm-2" type="text" placeholder="Search" [(ngModel)]="searchText" (keyup)="onSearch($event)">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="button" (click)="onSearchButton()">Search</button>
+    </div>
+    <br>
+    <people-list></people-list>
+  </div>
+  
+</div>

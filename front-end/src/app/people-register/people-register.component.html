@@ -1,0 +1,50 @@
+<h4>Registre un damnificado</h4> 
+<div class="col-lg-8 col-sm-12">
+    <form novalidate [formGroup]="personRegister" (ngSubmit)="submitForm(personRegister.value)">
+        <div class="form-group">
+            <label for="name">Nombres</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre" formControlName="firstName">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Apellidos</label>
+            <input id="lastName" name="lastName" type="text" class="form-control" formControlName="lastName" placeholder="Apellidos">
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-4 col-sm-12">
+                <label for="dni">DNI</label>
+                <input id="dni" name="dni" type="text" class="form-control" formControlName="dni" placeholder="Dni">
+
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <label for="birthday">Fecha de nacimiento</label>
+                <p-calendar id="birthday" formControlName="birthday" [monthNavigator]="true" [yearNavigator]="true" yearRange="1900:2018"
+                    [showIcon]="true"></p-calendar>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-4 col-sm-12">
+                <label for="familyMembers">Numero de familiares</label>
+                <input id="familyMembers" name="familyMembers" type="text" class="form-control" formControlName="familyMembers" placeholder="Familiares">
+
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <label for="tendNumber">Carpa n°</label>
+                <input id="tendNumber" name="tendNumber" type="text" class="form-control" formControlName="tendNumber" placeholder="Carpa n°">
+
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="exampleSelect1">Refugio/Albergue</label>
+            <select class="form-control" id="exampleSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

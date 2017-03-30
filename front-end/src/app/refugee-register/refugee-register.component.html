@@ -1,0 +1,25 @@
+<h4>Registre un Refugio o Albergue</h4>
+<div class="col-lg-8 col-sm-12">
+    <form novalidate [formGroup]="refugeeRegister" (ngSubmit)="submitForm(refugeeRegister.value)">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Nombre del refugio" formControlName="name">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Dirección</label>
+            <input id="lastName" name="lastName" type="text" class="form-control" formControlName="address" placeholder="Dirección">
+        </div>
+        <div class="form-group">
+            <label for="exampleSelect1">Distrito</label>
+            <select class="form-control" id="exampleSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

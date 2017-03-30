@@ -1,0 +1,61 @@
+{
+  "person": [
+    {
+      "id": 1, 
+      "name": "Demo name", 
+      "lastName":"demo Last Name", 
+      "dni": 45454555,
+      "birthday": "2012-04-23T18:25:43.511Z",
+	  "refugeeId":10,
+	  "familyMembers":1,
+	  "tendNumber":25,
+	  "created":"2012-04-23T18:25:43.511Z"
+    },
+	{
+      "id": 2, 
+      "name": "Lorem ipsus", 
+      "lastName":" Last Name3", 
+      "dni": 45454555,
+      "birthday": "2012-04-23T18:25:43.511Z",
+	  "refugeeId":10,
+	  "familyMembers":5,
+	  "tendNumber":25,
+	  "created":"2012-04-23T18:25:43.511Z"
+    }
+  ],
+  "refugee":[
+	  {
+		"refugeeId":1,
+		"name":"C.E: Miguel Cortes",
+		"address":"address",
+		"locationId":111
+	  }
+  ],
+  "deparment":[
+	  {
+		"departmentId":1,
+		"name":"Piura"
+	  }
+  ],
+  "province":[
+	  {
+		"provinceId":11,
+		"name":"Piura",
+		"departmentId":	1	
+	  }
+  ],
+  "district":[
+	  {
+		"departmentId":111,
+		"name":"Piura",
+		"departmentId":1,
+		"provinceId":11
+	  }
+  ],
+    "users":[
+	  {
+		  "username":"demo",
+		  "password":"admin123"
+	  }
+  ]
+}

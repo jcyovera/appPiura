@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-lg-10">
+        <div class="card-deck card-deck-example">
+            <div class="card card-outline-secondary col-lg-4 mb-3" *ngFor="let person of peopleList">
+                <div class="card-block">
+                    <h4 class="card-title" [innerText]="getFullName(person)"></h4>
+                    <label>Dni:</label>
+                    <span class="card-text" myHighlight [innerText]="person.dni"></span>
+                    <label>Fecha de Nacimiento:</label>
+                    <span class="card-text" >
+                        {{ person.birthday | date:"MM/dd/yy" }}
+                    </span>
+                </div>
+                <div class="card-footer">
+                    <label>Carpa #:</label>
+                    <small class="text-muted">{{person.tendNumber}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
